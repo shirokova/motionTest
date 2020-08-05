@@ -19,29 +19,37 @@ final class MagicVideoController {
         return manager
     }()
     
-    private var player: AVPlayer?
+    private var playerLayer: AVPlayerLayer?
     private var videoContainer: UIView!
+    private var looper: AVPlayerLooper?
     
     init(url: URL) {
         self.url = url
     }
     
     func addPlayer(to view: UIView) {
-        let size = view.bounds.diagonalSize
-
-        player = AVPlayer(url: url)
-        player?.actionAtItemEnd = .none;
-
         videoContainer = UIView()
         view.addSubview(videoContainer)
         
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = CGRect(x: 0, y: 0, width: size, height: size)
-
-        playerLayer.videoGravity = .resizeAspectFill
-        videoContainer.layer.insertSublayer(playerLayer, at: 0)
-
+        createPLayerLayer(with: view.bounds.diagonalSize)
         updateConstraints(in: view)
+    }
+    
+    private func createPLayerLayer(with size: CGFloat) {
+        let player = AVPlayer(url: url)
+        player.actionAtItemEnd = .none;
+        
+        if let item = player.currentItem {
+            let queuePlayer = AVQueuePlayer()
+            looper = AVPlayerLooper(player: queuePlayer, templateItem: item)
+            playerLayer = AVPlayerLayer(player: queuePlayer)
+        } else {
+            playerLayer = AVPlayerLayer(player: player)
+        }
+        
+        playerLayer?.frame = CGRect(x: 0, y: 0, width: size, height: size)
+        playerLayer?.videoGravity = .resizeAspectFill
+        videoContainer.layer.insertSublayer(playerLayer!, at: 0)
     }
     
     private func updateConstraints(in view: UIView) {
@@ -57,8 +65,7 @@ final class MagicVideoController {
     }
     
     func start() {
-        player?.seek(to: .zero)
-        player?.play()
+        playerLayer?.player?.play()
         
         guard motionManager.isDeviceMotionAvailable else { return }
         motionManager.startDeviceMotionUpdates(to: .main) { [weak self] (data, error) in
@@ -71,7 +78,7 @@ final class MagicVideoController {
     }
     
     func pause() {
-        player?.pause()
+        playerLayer?.player?.pause()
         
         guard motionManager.isDeviceMotionAvailable else { return }
         motionManager.stopDeviceMotionUpdates()

@@ -8,7 +8,8 @@
 
 import UIKit
 
-private let url = URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")
+private let url = Bundle.main.url(forResource: "waterfall", withExtension: "mov")
+//"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")
 
 class ViewController: UIViewController {
     private var controller: MagicVideoController?

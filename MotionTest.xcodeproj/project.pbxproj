@@ -15,6 +15,7 @@
 		85B2ADD124DB31D500692BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADCF24DB31D500692BB7 /* LaunchScreen.storyboard */; };
 		85B2ADF724DB4B7A00692BB7 /* CGRect+Diagonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */; };
 		85B2ADF924DB4EDD00692BB7 /* MagicVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */; };
+		85B2ADFB24DB607D00692BB7 /* waterfall.mov in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADFA24DB607D00692BB7 /* waterfall.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		85B2ADE224DB31D600692BB7 /* MotionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Diagonal.swift"; sourceTree = "<group>"; };
 		85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicVideoController.swift; sourceTree = "<group>"; };
+		85B2ADFA24DB607D00692BB7 /* waterfall.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = waterfall.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				85B2ADCA24DB31D400692BB7 /* Main.storyboard */,
 				85B2ADCD24DB31D500692BB7 /* Assets.xcassets */,
 				85B2ADCF24DB31D500692BB7 /* LaunchScreen.storyboard */,
+				85B2ADFA24DB607D00692BB7 /* waterfall.mov */,
 				85B2ADD224DB31D500692BB7 /* Info.plist */,
 			);
 			path = MotionTest;
@@ -214,6 +217,7 @@
 			files = (
 				85B2ADD124DB31D500692BB7 /* LaunchScreen.storyboard in Resources */,
 				85B2ADCE24DB31D500692BB7 /* Assets.xcassets in Resources */,
+				85B2ADFB24DB607D00692BB7 /* waterfall.mov in Resources */,
 				85B2ADCC24DB31D400692BB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
