@@ -13,8 +13,6 @@
 		85B2ADCC24DB31D400692BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADCA24DB31D400692BB7 /* Main.storyboard */; };
 		85B2ADCE24DB31D500692BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADCD24DB31D500692BB7 /* Assets.xcassets */; };
 		85B2ADD124DB31D500692BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADCF24DB31D500692BB7 /* LaunchScreen.storyboard */; };
-		85B2ADDC24DB31D600692BB7 /* MotionTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADDB24DB31D600692BB7 /* MotionTestTests.swift */; };
-		85B2ADE724DB31D600692BB7 /* MotionTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADE624DB31D600692BB7 /* MotionTestUITests.swift */; };
 		85B2ADF724DB4B7A00692BB7 /* CGRect+Diagonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */; };
 		85B2ADF924DB4EDD00692BB7 /* MagicVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */; };
 /* End PBXBuildFile section */
@@ -46,11 +44,7 @@
 		85B2ADD024DB31D500692BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85B2ADD224DB31D500692BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B2ADD724DB31D600692BB7 /* MotionTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		85B2ADDB24DB31D600692BB7 /* MotionTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTestTests.swift; sourceTree = "<group>"; };
-		85B2ADDD24DB31D600692BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B2ADE224DB31D600692BB7 /* MotionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		85B2ADE624DB31D600692BB7 /* MotionTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTestUITests.swift; sourceTree = "<group>"; };
-		85B2ADE824DB31D600692BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Diagonal.swift"; sourceTree = "<group>"; };
 		85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicVideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				85B2ADC324DB31D400692BB7 /* MotionTest */,
-				85B2ADDA24DB31D600692BB7 /* MotionTestTests */,
-				85B2ADE524DB31D600692BB7 /* MotionTestUITests */,
 				85B2ADC224DB31D400692BB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,24 +106,6 @@
 				85B2ADD224DB31D500692BB7 /* Info.plist */,
 			);
 			path = MotionTest;
-			sourceTree = "<group>";
-		};
-		85B2ADDA24DB31D600692BB7 /* MotionTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				85B2ADDB24DB31D600692BB7 /* MotionTestTests.swift */,
-				85B2ADDD24DB31D600692BB7 /* Info.plist */,
-			);
-			path = MotionTestTests;
-			sourceTree = "<group>";
-		};
-		85B2ADE524DB31D600692BB7 /* MotionTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				85B2ADE624DB31D600692BB7 /* MotionTestUITests.swift */,
-				85B2ADE824DB31D600692BB7 /* Info.plist */,
-			);
-			path = MotionTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B2ADDC24DB31D600692BB7 /* MotionTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B2ADE724DB31D600692BB7 /* MotionTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
