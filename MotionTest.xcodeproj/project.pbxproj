@@ -15,6 +15,8 @@
 		85B2ADD124DB31D500692BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B2ADCF24DB31D500692BB7 /* LaunchScreen.storyboard */; };
 		85B2ADDC24DB31D600692BB7 /* MotionTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADDB24DB31D600692BB7 /* MotionTestTests.swift */; };
 		85B2ADE724DB31D600692BB7 /* MotionTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADE624DB31D600692BB7 /* MotionTestUITests.swift */; };
+		85B2ADF724DB4B7A00692BB7 /* CGRect+Diagonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */; };
+		85B2ADF924DB4EDD00692BB7 /* MagicVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		85B2ADE224DB31D600692BB7 /* MotionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B2ADE624DB31D600692BB7 /* MotionTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTestUITests.swift; sourceTree = "<group>"; };
 		85B2ADE824DB31D600692BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Diagonal.swift"; sourceTree = "<group>"; };
+		85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicVideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				85B2ADC424DB31D400692BB7 /* AppDelegate.swift */,
 				85B2ADC624DB31D400692BB7 /* SceneDelegate.swift */,
 				85B2ADC824DB31D400692BB7 /* ViewController.swift */,
+				85B2ADF824DB4EDD00692BB7 /* MagicVideoController.swift */,
+				85B2ADF624DB4B7A00692BB7 /* CGRect+Diagonal.swift */,
 				85B2ADCA24DB31D400692BB7 /* Main.storyboard */,
 				85B2ADCD24DB31D500692BB7 /* Assets.xcassets */,
 				85B2ADCF24DB31D500692BB7 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B2ADF924DB4EDD00692BB7 /* MagicVideoController.swift in Sources */,
 				85B2ADC924DB31D400692BB7 /* ViewController.swift in Sources */,
 				85B2ADC524DB31D400692BB7 /* AppDelegate.swift in Sources */,
+				85B2ADF724DB4B7A00692BB7 /* CGRect+Diagonal.swift in Sources */,
 				85B2ADC724DB31D400692BB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VTT25HS77;
 				INFOPLIST_FILE = MotionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VTT25HS77;
 				INFOPLIST_FILE = MotionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

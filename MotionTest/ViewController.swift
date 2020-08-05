@@ -8,13 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+private let url = URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")
 
+class ViewController: UIViewController {
+    private var controller: MagicVideoController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        addSomeMagic()
     }
-
-
+    
+    private func addSomeMagic() {
+        guard let url = url else { return }
+        controller = MagicVideoController(url: url)
+        controller?.addPlayer(to: self.view)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        controller?.start()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        controller?.pause()
+    }
 }
-
